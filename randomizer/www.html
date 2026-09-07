@@ -9,6 +9,7 @@
 <body>
     <header>
         <h1>CHOISERANDOM</h1>
+
         <nav>
             <button id="O_R">ОРЕЛ-РЕШКА</button>
             <button id="manyVar">несколько вариантов</button>
@@ -16,8 +17,10 @@
         </nav>
     </header>
     <main>
+
+        <h1 id="cap">во что поиграем?</h1>
+
         <section id="section_O_R">
-            <h1 id="cap">во что поиграем?</h1>
             <div id="game">
                 <h3>
                   в этот раз судьба говорит тебе:  <span id="rezult"></span>
@@ -28,8 +31,46 @@
                     <p>решка: <span id="reshka">0</span></p>
 
                 </div>
+                <button id="reset_O_R">Давай попробуем еще раз</button>
             </div>
         </section>
+
+        <section id="section_manyVar">
+            <div >
+                <input id="write_var" type="text">
+            </div>
+            <button id="add_var"> + добавить</button>
+
+            <div>
+                <p id="catalogVar"></p>
+                <button id="buttonVar">Сделать выбор</button>
+            </div>
+
+            <div>
+                <p>судьба распорядилась так: </p>
+                <h3 id="rezultVar"></h3>
+            </div>
+            <button id="resetVar">Давай попробуем еще раз</button>
+         </section>
+
+         <section id="section_vip">
+            <h2>Вся мощ космоса собирается в одном ответе.
+                 И только для того, 
+                чтобы ответить на твой вопрос.
+                 Не используй эту способность слишком часто
+                Мы живем, для того, что-бы что-то происходило,
+                 а не наоборот.</h2>
+            <div id="game_vip">
+                <h3>
+                  Вселенная ответит на твой запрос:  <span id="rezult_vip"></span>
+                </h3>
+                <button id="button_vip">тебе повезет</button>
+                <button id="reset_vip"></button>
+            </div>
+        </section>
+
+
+
     </main>
     <footer>
         <p>©2026</p>
